@@ -4,10 +4,9 @@
     <li *ngFor="let quote of quotes">
       {{ quote.name }}
       <br>
-      :Loves.  .  :Oks.
+      :Loves  || :Oks
       <br>
       <app-quote-details [quote]="quote"></app-quote-details>
-      <hr>
     </li>
     <hr>
   </ol>

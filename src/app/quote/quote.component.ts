@@ -15,6 +15,7 @@ export class QuoteComponent implements OnInit {
     {id:5, name:'"The shortest answer is doing." — Lord Herbert.'},
     {id:6, name:'"Powerful dreams inspire powerful action." — Jonathan Lockwood Huie'}
   ]
+  
   constructor() { }
 
   ngOnInit(): void {

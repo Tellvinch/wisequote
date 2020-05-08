@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Quotes</h1>
+  <ol>
+    <li *ngFor="let quote of quotes">
+      {{ quote.name }}
+      <br>
+      :Loves.  .  :Oks.
+      <br>
+      <app-quote-details [quote]="quote"></app-quote-details>
+      <hr>
+    </li>
+    <hr>
+  </ol>
+</div>

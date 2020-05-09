@@ -1,17 +1,19 @@
 <div class="container" style="background-color: lightskyblue;">
   <h1 style="margin-left: 340px;">WISE QUOTES</h1>
   <hr>
- <div class="col-md-6">
-    <ol>
-    <li *ngFor="let quote of quotes">
-      {{ quote.name }}
-      <br>
-      <p>:Loves</p>
-      <p>:Oks </p>
-      <app-quote-details [quote]="quote"></app-quote-details>
+  <div class="col-md-10">
+    <ol style="padding-left: 250px;">
+      <li *ngFor="let quote of quotes">
+        {{ quote.name }}
+        <br>
+        <p>:Loves</p>
+        <p>:Oks </p>
+        <app-quote-details [quote]="quote"></app-quote-details>
+        <hr>
+      </li>
       <hr>
-    </li>
-    <hr>
-  </ol>
- </div>
+    </ol>
+  </div>
+   <app-quote-form></app-quote-form>
+ 
 </div>

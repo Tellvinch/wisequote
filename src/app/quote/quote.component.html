@@ -1,14 +1,15 @@
-<div class="container" style="background-color: blanchedalmondgit;">
-  <h1 style="margin-left: 425px;">Quotes</h1>
+<div class="container" style="background-color: lightskyblue;">
+  <h1 style="margin-left: 340px;">WISE QUOTES</h1>
   <hr>
  <div class="col-md-6">
     <ol>
     <li *ngFor="let quote of quotes">
       {{ quote.name }}
       <br>
-      :Loves  || :Oks
-      <br>
+      <p>:Loves</p>
+      <p>:Oks </p>
       <app-quote-details [quote]="quote"></app-quote-details>
+      <hr>
     </li>
     <hr>
   </ol>

@@ -1,6 +1,8 @@
-<div class="container">
-  <h1>Quotes</h1>
-  <ol>
+<div class="container" style="background-color: blanchedalmond;">
+  <h1 style="margin-left: 425px;">Quotes</h1>
+  <hr>
+ <div class="col-md-6">
+    <ol>
     <li *ngFor="let quote of quotes">
       {{ quote.name }}
       <br>
@@ -10,4 +12,5 @@
     </li>
     <hr>
   </ol>
+ </div>
 </div>

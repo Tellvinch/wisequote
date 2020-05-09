@@ -8,12 +8,12 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
-    {id:1, name:'"Never, never, never give up." — Winston Churchill.'},
-    {id:2, name:'"While there is life, there is hope." — Marcus Tullius .'},
-    {id:3, name:'"Failure is success in progress." — Anonymous.'},
-    {id:4, name:'"Success demands singleness of purpose." — Vincent .'},
-    {id:5, name:'"The shortest answer is doing." — Lord Herbert.'},
-    {id:6, name:'"Powerful dreams inspire powerful action." — Jonathan '}
+    {id:1, name:'"Never, never, never give up."', author:'" Winston Churchill"'},
+    {id:2, name:'"While there is life, there is hope."', author:'"Marcus Tullius"'},
+    {id:3, name:'"Failure is success in progress."', author:'" Anonymous "'},
+    {id:4, name:'"Success demands singleness of purpose."', author:'" Vincent "'},
+    {id:5, name:'"The shortest answer is doing." ', author:'" Lord Herbert "'},
+    {id:6, name:'"Powerful dreams inspire powerful action."', author:'" Jonathan "'} 
   ]
   // completeGoal(isComplete, index){
   //   if (isComplete) {

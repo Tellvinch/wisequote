@@ -1,5 +1,5 @@
 # Wise
-
+Wise is an an application that enables the user to read r create a quote.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
 
 ## Development server

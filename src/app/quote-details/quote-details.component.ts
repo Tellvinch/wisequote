@@ -10,7 +10,11 @@ export class QuoteDetailsComponent implements OnInit {
 
 
   @Input() quote: Quote;
-  
+  @Output() isCreated = new EventEmitter<boolean>();
+
+  quoteCreated(created:boolean){
+    this.isCreated.emit(created);
+  }
   constructor() { }
 
   ngOnInit(): void {

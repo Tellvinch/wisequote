@@ -1,19 +1,24 @@
 <div class="container" style="background-color: lightskyblue;">
   <h1 style="margin-left: 340px;">WISE QUOTES</h1>
-  <hr>
+  <hr />
   <div class="col-md-10">
     <ol style="padding-left: 250px;">
-      <li *ngFor="let quote of quotes">
-        {{ quote.name }}
-        <br>
+      <div *ngFor="let quote of quotes; let i = index">
+        <li appHighlight highlightColor="yellow">
+          {{ quote.name }} created by {{ quote.author }}  
+            {{ quote.createdDate | daysCount }} days ago
+        </li>
+        <br />
         <p>:Loves</p>
-        <p>:Oks </p>
-        <app-quote-details [quote]="quote"></app-quote-details>
-        <hr>
-      </li>
-      <hr>
+        <p>:Oks</p>
+        <app-quote-details
+          [quote]="quote"
+          (isCreated)="createdQuote($event, i)"
+        ></app-quote-details>
+        <hr />
+      </div>
+      <hr />
     </ol>
   </div>
-   <app-quote-form></app-quote-form>
- 
+  <app-quote-form></app-quote-form>
 </div>

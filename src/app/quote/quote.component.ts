@@ -15,6 +15,8 @@ export class QuoteComponent implements OnInit {
     new Quote (5,'"The shortest answer is doing." ','" Lord Herbert "',new Date(2009,4,8)),
     new Quote (6,'"Powerful dreams inspire powerful action."','" Jonathan "',new Date(2019,6,8)) 
   ]
+  votes = 1
+  
   toggleDetails(index){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
   }

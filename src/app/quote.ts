@@ -4,3 +4,7 @@ export class Quote {
     this.showAuthor=true;
   }
 }
+
+export class Vote {
+  ok:number
+}

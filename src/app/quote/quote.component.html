@@ -9,8 +9,10 @@
             {{ quote.createdDate | daysCount }} days ago
         </li>
         <br />
-        <p>:Loves</p>
-        <p>:Oks</p>
+        <div class="votes">
+          <p>:Loves</p>
+          <p>:Oks</p>
+        </div>
         <app-quote-details
           [quote]="quote"
           (isCreated)="createdQuote($event, i)"
@@ -20,5 +22,5 @@
       <hr />
     </ol>
   </div>
-  <app-quote-form></app-quote-form>
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>

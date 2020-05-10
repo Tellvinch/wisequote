@@ -1,13 +1,13 @@
 <div class="container-fluid col-md-8" >
     <h4 style="text-align: center;">CREATE YOUR QUOTE</h4>
     <hr>
-    <form>
+    <form  (ngSubmit)='submitQuote()'>
        
         <div class="form-group">
   
             <label for="description">Type  here</label>
-            <textarea class="form-control" id="description" rows="4" required></textarea>
-  
+            <textarea class="form-control" id="name"  name="name"  required></textarea>
+          
         </div>
         <div class="form-group">
             <label for="name">Author</label>
@@ -23,5 +23,6 @@
             <label for="created">Date</label>
             <input type='date' id="created" required>
           </div>
+          <button type="submit" class="btn btn-success">Add Quote</button>
     </form>
   </div>
